@@ -13,4 +13,20 @@ class DB
     public $host;
     public $password;
     public $database;
+
+    public function connection()
+    {
+        $this->link = new mysqli('localhost', 'username', '', 'dts');
+
+    }
+
+    public function select($q)
+    {
+
+    }
+
+    public function update()
+    {
+
+    }
 }
