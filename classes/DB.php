@@ -29,4 +29,12 @@ class DB
     {
 
     }
+
+    /**
+     * @return mixed
+     */
+    public function delete()
+    {
+
+    }
 }
