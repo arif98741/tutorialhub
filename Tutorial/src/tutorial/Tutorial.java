@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Tutorial {
 
-    public static void main(String[] args) { // TODO code application logic here
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int x = 5;
         int[] values = new int[x];
