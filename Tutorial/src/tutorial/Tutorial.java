@@ -11,7 +11,6 @@ public class Tutorial {
         for (int i = 0; i < x; i++) {//taking values from user for five times
             values[i] = sc.nextInt();
         }
-
         for (int i = 0; i < x; i++) { //printing all values 
             System.out.print(values[i] + " ");
         }
