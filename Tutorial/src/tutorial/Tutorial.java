@@ -1,22 +1,26 @@
 package tutorial;
 
-import java.util.Scanner;
-
+import java.util.*;
+//find average and total hours
 public class Tutorial {
 
     public static void main(String[] args) {
+
+        double[] worked_hours = new double[3];
+        double total_hours = 0;
+
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the size of array: ");
-        int x = sc.nextInt();
-        String[] values = new String[x]; //array declaration
-        for (int i = 0; i < x; i++) {//taking values from user for five times
-            values[i] = sc.next(); //putting value in array's index
+        int id = sc.nextInt();
+        String name = sc.next();
+
+        for (int i = 0; i < worked_hours.length; i++) {
+            worked_hours[i] = sc.nextDouble();
+            total_hours += worked_hours[i];
         }
-        for (int i = 0; i < x; i++) { //printing all values 
-            System.out.print(values[i] + " ");
-        }
+
+        double average_hours = total_hours / 4;
+
         System.out.println("");
+        System.out.println(name + " (ID#" + id + ") worked " + String.format("%.1f", total_hours) + " hours (" + String.format("%.1f", average_hours) + " hours/day)");
     }
-//program for taking array size for string
-//print array values
 }
